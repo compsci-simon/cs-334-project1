@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home page</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+
+	<div class="container">
+		<div class="mt-5"></div>
+		<form class="border p-3 bg-white m-auto rounded shadow-sm" action="#" method='POST' style="max-width: 700px">
+			{{ form.hidden_tag() }}
+			<legend class="pb-3 border-bottom">{{ legend }}</legend>
+			<div class="form-group mb-4">
+				{{ form.search_terms.label(class="form-control-label") }}
+				{{ form.search_terms(class="form-control form-control-lg") }}
+			</div>
+
+			<div class="form-group mb-4">
+				{{ form.submit1(class="btn btn-outline-primary") }}
+				{{ form.submit2(class="btn btn-outline-primary") }}
+			</div>
+
+		</form>
+	</div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</html>
